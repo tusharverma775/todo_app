@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html, body, #root { min-height: 100%; }
+body { font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif; -webkit-tap-highlight-color: transparent; }
+.safe-b { padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
+@keyframes sheet { from { transform: translateY(100%); } to { transform: translateY(0); } }
+.animate-sheet { animation: sheet .22s ease-out; }
